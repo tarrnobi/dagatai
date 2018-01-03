@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import CalendarItem from './CalendarItem';
+import Item from './Item';
 
 class Calendar extends Component {
   constructor(props) {
@@ -7,7 +7,11 @@ class Calendar extends Component {
     this.state = {
       activeDate: new Date(),
       locale: 'en-US',
+      showEntryList: false,
     };
+
+    this.handleChildDaySelection = this.handleChildDaySelection.bind(this);
+    this.hideEntryList = this.hideEntryList.bind(this);
   }
   getDaysInMonth() {
     const d = new Date(
@@ -27,13 +31,23 @@ class Calendar extends Component {
         i + 1,
       );
       return (
-        <CalendarItem
+        <Item
           key={itemDate}
           itemDate={itemDate}
+          itemClicked={this.handleChildDaySelection}
         />
       );
     });
     return items;
+  }
+  handleChildDaySelection(date) {
+    this.setState({
+      selectedDate: date.toLocaleDateString(),
+      showEntryList: true,
+    });
+  }
+  hideEntryList() {
+    this.setState({ showEntryList: false })
   }
 
   render() {
@@ -42,9 +56,16 @@ class Calendar extends Component {
         <h2>Dagata.io</h2>
         <h2>{ this.state.activeDate.toLocaleString(this.state.locale, { month: 'long' }) }</h2>
         <h2>Num Days: { this.getDaysInMonth() }</h2>
+        <h2>Selected Day: { this.state.selectedDate }</h2>
         <ul className="days">
           {this.generateCalendarItems()}
         </ul>
+        {this.state.showEntryList === true &&
+          <div>
+            <h2>Entries For: {this.state.selectedDate}</h2>
+            <button onClick={this.hideEntryList}>Hide</button>
+          </div>
+        }
       </div>
     );
   }
