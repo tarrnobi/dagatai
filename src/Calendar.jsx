@@ -1,6 +1,35 @@
 import React, { Component } from 'react';
 import Item from './Item';
+import EntryList from './EntryList';
 
+import colours from './style';
+
+const style = {
+  container: {
+    // position: 'relative',
+    // overflow: 'hidden',
+    // zoom: '1',
+    display: 'flow-root',
+  },
+  calendarSection: {
+    border: 'solid  ' + colours.Primary4 + ' 3px',
+    backgroundColor: colours.charcoalLight,
+  },
+  datePanel: {
+    backgroundColor: colours.charcoalLightest,
+    width: '15%',
+    // : 'absolute',
+    display: 'inline-block',
+  },
+  header: {
+    backgroundColor: colours.Primary0,
+    minHeight: '30px',
+    fontSize: '2em',
+    fontFamily: 'Impact, sans-serif',
+    color: colours.PrimaryText0,
+  },
+
+};
 class Calendar extends Component {
   constructor(props) {
     super(props);
@@ -47,25 +76,29 @@ class Calendar extends Component {
     });
   }
   hideEntryList() {
-    this.setState({ showEntryList: false })
+    this.setState({ showEntryList: false });
   }
 
   render() {
     return (
-      <div>
-        <h2>Dagata.io</h2>
-        <h2>{ this.state.activeDate.toLocaleString(this.state.locale, { month: 'long' }) }</h2>
-        <h2>Num Days: { this.getDaysInMonth() }</h2>
-        <h2>Selected Day: { this.state.selectedDate }</h2>
-        <ul className="days">
-          {this.generateCalendarItems()}
-        </ul>
-        {this.state.showEntryList === true &&
-          <div>
-            <h2>Entries For: {this.state.selectedDate}</h2>
-            <button onClick={this.hideEntryList}>Hide</button>
-          </div>
-        }
+      <div style={style.container}>
+        <header style={style.header}>
+          Dagata.io
+        </header>
+        <div style={style.calendarSection}>
+          <h2>{ this.state.activeDate.toLocaleString(this.state.locale, { month: 'long' }) }</h2>
+          <h2>Num Days: { this.getDaysInMonth() }</h2>
+          <h2>Selected Day: { this.state.selectedDate }</h2>
+          <ul style={style.datePanel}>
+            {this.generateCalendarItems()}
+          </ul>
+          {this.state.showEntryList === true &&
+            <EntryList
+              selectedDate={this.state.selectedDate}
+              hideEntryList={this.hideEntryList}
+            />
+          }
+        </div>
       </div>
     );
   }

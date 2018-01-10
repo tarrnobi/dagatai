@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
+import colours from './style';
+
 const style = {
   calendarItem: {
     listStyleType: 'none',
@@ -9,11 +11,11 @@ const style = {
     textAlign: 'center',
     marginBottom: '5px',
     fontSize: '12px',
-    color: '#777',
   },
   buttonStyle: {
     border: 'none',
     backgroundColor: 'transparent',
+    color: '#ffffff',
   },
 };
 
