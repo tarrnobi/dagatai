@@ -9,7 +9,8 @@ const colours = {
 
   charcoalDark: '#0d1013',
   charcoalLight: '#171d22',
-  charcoalLightest: '#2c3740',
+  charcoalLighter: '#2c3740',
+  charcoalLightest: '#41505e',
 
 };
 

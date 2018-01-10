@@ -6,20 +6,18 @@ import colours from './style';
 
 const style = {
   container: {
-    // position: 'relative',
-    // overflow: 'hidden',
-    // zoom: '1',
-    display: 'flow-root',
   },
   calendarSection: {
-    border: 'solid  ' + colours.Primary4 + ' 3px',
+    border: `solid ${colours.Primary4} 3px`,
     backgroundColor: colours.charcoalLight,
   },
   datePanel: {
-    backgroundColor: colours.charcoalLightest,
-    width: '15%',
-    // : 'absolute',
+    backgroundColor: colours.charcoalLighter,
     display: 'inline-block',
+    verticalAlign: 'top',
+    maxWidth: '50%',
+    margin: '0',
+    padding: '0',
   },
   header: {
     backgroundColor: colours.Primary0,

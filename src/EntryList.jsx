@@ -2,12 +2,18 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 import EntryForm from './EntryForm';
+import colours from './style';
+
 const style = {
   entryListPanel: {
-    marginLeft: '80%',
+    backgroundColor: colours.charcoalLightest,
     display: 'inline-block',
+    margin: '0',
+    width: '50%',
+    minHeight: '200px',
   },
-}
+};
+
 class EntryList extends Component {
   constructor(props) {
     super(props);
