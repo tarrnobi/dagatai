@@ -85,8 +85,6 @@ class Calendar extends Component {
         </header>
         <div style={style.calendarSection}>
           <h2>{ this.state.activeDate.toLocaleString(this.state.locale, { month: 'long' }) }</h2>
-          <h2>Num Days: { this.getDaysInMonth() }</h2>
-          <h2>Selected Day: { this.state.selectedDate }</h2>
           <ul style={style.datePanel}>
             {this.generateCalendarItems()}
           </ul>

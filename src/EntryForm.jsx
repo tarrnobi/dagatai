@@ -1,6 +1,21 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
+const FA = require('react-fontawesome');
+
+const style = {
+  buttonTransparent: {
+    border: 'none',
+    backgroundColor: 'transparent',
+    color: '#ffffff',
+  },
+  textArea: {
+    minWidth: '98%',
+    maxWidth: '100%',
+    resize: 'none',
+  },
+};
+
 class EntryForm extends Component {
   constructor(props) {
     super(props);
@@ -13,9 +28,18 @@ class EntryForm extends Component {
   render() {
     return (
       <div>
-        <h2>New Entry: {this.props.selectedDate}</h2>
-        <button onClick={this.handleHideFormClicked}>Hide</button>
+        <h2 style={{ display: 'inline' }}>New Entry</h2>
+        <button
+          style={Object.assign({}, style.buttonTransparent, { float: 'right' })}
+          onClick={this.handleHideFormClicked}
+        >
+          <FA name="times" size="2x" />
+        </button>
         <form>
+          <textarea
+            style={style.textArea}
+            rows="5"
+          />
           <button>Submit</button>
         </form>
       </div>

@@ -4,6 +4,8 @@ import PropTypes from 'prop-types';
 import EntryForm from './EntryForm';
 import colours from './style';
 
+const FA = require('react-fontawesome');
+
 const style = {
   entryListPanel: {
     backgroundColor: colours.charcoalLightest,
@@ -11,6 +13,12 @@ const style = {
     margin: '0',
     width: '50%',
     minHeight: '200px',
+    clear: 'both',
+  },
+  buttonTransparent: {
+    border: 'none',
+    backgroundColor: 'transparent',
+    color: '#ffffff',
   },
 };
 
@@ -37,9 +45,23 @@ class EntryList extends Component {
   render() {
     return (
       <div style={style.entryListPanel}>
-        <h2>Entries For: {this.props.selectedDate}</h2>
-        <button onClick={this.handleAddEntryFormClicked}>Add Entry</button>
-        <button onClick={this.handleHideClicked}>Hide</button>
+        <div>
+          <h2 style={{ display: 'inline' }}>{this.props.selectedDate}</h2>
+          <button
+            style={Object.assign({}, style.buttonTransparent, { float: 'right' })}
+            onClick={this.handleHideClicked}
+          >
+            <FA name="times" size="2x" />
+          </button>
+          <button
+            onClick={this.handleAddEntryFormClicked}
+            style={Object.assign({}, style.buttonTransparent, { float: 'right' })}
+          >
+            <FA name="plus" size="2x" />
+          </button>
+          <hr />
+        </div>
+
         {this.state.showEntryForm === true &&
           <EntryForm
             selectedDate={this.props.selectedDate}
@@ -54,7 +76,6 @@ class EntryList extends Component {
 EntryList.propTypes = {
   selectedDate: PropTypes.instanceOf(Date).isRequired,
   hideEntryList: PropTypes.func.isRequired,
-
 };
 
 export default EntryList;
