@@ -69,7 +69,7 @@ class Calendar extends Component {
   }
   handleChildDaySelection(date) {
     this.setState({
-      selectedDate: date.toLocaleDateString(),
+      selectedDate: date,
       showEntryList: true,
     });
   }
@@ -92,6 +92,7 @@ class Calendar extends Component {
             <EntryList
               selectedDate={this.state.selectedDate}
               hideEntryList={this.hideEntryList}
+              endPoint={`${process.env.REACT_APP_API_HOST}/api/events`}
             />
           }
         </div>
