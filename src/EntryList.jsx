@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import axios from 'axios';
 
-import EntryForm from './EntryForm';
 import EntryItem from './EntryItem';
 import colours from './style';
 
