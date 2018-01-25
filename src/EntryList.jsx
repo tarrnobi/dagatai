@@ -38,6 +38,7 @@ class EntryList extends Component {
     this.loadEventsFromAPI = this.loadEventsFromAPI.bind(this);
     this.handleCreateNewEvent = this.handleCreateNewEvent.bind(this);
     this.handleDeleteEvent = this.handleDeleteEvent.bind(this);
+    this.handleUpdateEvent = this.handleUpdateEvent.bind(this);
   }
   componentDidMount() {
     this.loadEventsFromAPI();
@@ -64,18 +65,29 @@ class EntryList extends Component {
     console.log(response);
     this.loadEventsFromAPI();
   }
-  async handleDeleteEvent(event) {
-
+  async handleDeleteEvent(id) {
+    const response = await axios.delete(`${this.props.endPoint}/${id}`);
+    console.log(response);
+    this.loadEventsFromAPI();
+  }
+  async handleUpdateEvent(id, event) {
+    const response = await axios.put(`${this.props.endPoint}/${id}`, event);
+    console.log(response);
+    this.loadEventsFromAPI();
   }
 
   generateEntryItems() {
     const entries = this.state.events.map(item => (
       <EntryItem
         key={item._id}
+        eventID={item._id}
         itemDate={new Date(item.entryDate)}
         author={item.author}
         text={item.text}
-        onEventDelete={this.handleDeleteEvent}
+        onNewEvent={this.handleCreateNewEvent}
+        onEditEvent={this.handleUpdateEvent}
+        onDeleteEvent={this.handleDeleteEvent}
+        onHideForm={this.handleHideEntryFormClicked}
       />
     ));
     return entries;
@@ -100,12 +112,14 @@ class EntryList extends Component {
           </button>
           <hr />
         </div>
-
         {this.state.showEntryForm === true &&
-          <EntryForm
-            selectedDate={this.props.selectedDate}
-            hideForm={this.handleHideEntryFormClicked}
-            onEventSubmit={this.handleCreateNewEvent}
+          <EntryItem
+            key="-1"
+            itemDate={new Date(this.props.selectedDate)}
+            onNewEvent={this.handleCreateNewEvent}
+            onEditEvent={this.handleUpdateEvent}
+            onDeleteEvent={this.handleDeleteEvent}
+            onHideForm={this.handleHideEntryFormClicked}
           />
         }
         {this.state.events.length > 0 &&

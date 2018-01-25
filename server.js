@@ -45,9 +45,7 @@ router.get('/', (req, res) => {
 router.route('/events')
   .get((req, res) => {
     Event.find((err, events) => {
-      if (err) {
-        res.send(err);
-      }
+      if (err) res.send(err);
       // response with events
       return res.json(events);
     });
@@ -60,13 +58,36 @@ router.route('/events')
     event.text = req.body.text;
 
     event.save((err) => {
-      if (err) {
-        res.send(err);
-      }
+      if (err) res.send(err);
+
       return res.json({ message: 'Event added!' });
     });
   });
+// reouter route for specific events
+router.route('/events/:event_id')
+  .put((req, res) => {
+    Event.findById(req.params.event_id, (err, event) => {
+      if (err) res.send(err);
 
+      if (req.body.author) event.author = req.body.author;
+      if (req.body.text) event.text = req.body.text;
+      if (req.body.entryDate) event.entryDate = req.body.entryDate;
+      // save events
+      event.save((saveError) => {
+        if (saveError) {
+          res.send(saveError);
+        }
+        res.json({ message: 'Event updated' });
+      });
+    });
+  })
+  // delete method for removing events
+  .delete((req, res) => {
+    Event.remove({ _id: req.params.event_id }, (err) => {
+      if (err) res.send(err);
+      res.json({ message: 'Comment deleted' });
+    });
+  });
 // user our router configuration when we call /api
 app.use('/api', router);
 
