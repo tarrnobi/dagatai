@@ -9,6 +9,7 @@
     "express": "^4.16.2",
     "foreman": "^2.0.0",
     "marked": "^0.3.9",
+    "moment": "^2.20.1",
     "mongoose": "^4.13.7",
     "mongoose-unique-validator": "^1.0.6",
     "nodemon": "^1.14.3",

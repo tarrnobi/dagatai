@@ -56,7 +56,7 @@ class EntryList extends Component {
   }
 
   async loadEventsFromAPI() {
-    const response = await axios.get(this.props.endPoint);
+    const response = await axios.get(`${this.props.endPoint}?entryDate=${this.props.selectedDate}`);
     this.setState({ events: response.data });
   }
   async handleCreateNewEvent(event) {
