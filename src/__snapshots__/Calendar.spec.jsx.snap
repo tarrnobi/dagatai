@@ -1,0 +1,790 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Calendar Renders 1`] = `
+<div
+  style={Object {}}
+>
+  <header
+    style={
+      Object {
+        "backgroundColor": "#AF3A0B",
+        "color": "#E37448",
+        "fontFamily": "Impact, sans-serif",
+        "fontSize": "2em",
+        "minHeight": "30px",
+      }
+    }
+  >
+    Dagata.io
+  </header>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#171d22",
+        "border": "solid #6B1F00 3px",
+      }
+    }
+  >
+    <h2>
+      January
+    </h2>
+    <ul
+      style={
+        Object {
+          "backgroundColor": "#2c3740",
+          "display": "inline-block",
+          "margin": "0",
+          "maxWidth": "50%",
+          "padding": "0",
+          "verticalAlign": "top",
+        }
+      }
+    >
+      <li
+        style={
+          Object {
+            "display": "inline-block",
+            "listStyleType": "none",
+            "marginBottom": "5px",
+            "textAlign": "center",
+            "width": "13.6%",
+          }
+        }
+      >
+        <button
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "transparent",
+              "border": "none",
+              "color": "#ffffff",
+            }
+          }
+        >
+          1
+        </button>
+      </li>
+      <li
+        style={
+          Object {
+            "display": "inline-block",
+            "listStyleType": "none",
+            "marginBottom": "5px",
+            "textAlign": "center",
+            "width": "13.6%",
+          }
+        }
+      >
+        <button
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "transparent",
+              "border": "none",
+              "color": "#ffffff",
+            }
+          }
+        >
+          2
+        </button>
+      </li>
+      <li
+        style={
+          Object {
+            "display": "inline-block",
+            "listStyleType": "none",
+            "marginBottom": "5px",
+            "textAlign": "center",
+            "width": "13.6%",
+          }
+        }
+      >
+        <button
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "transparent",
+              "border": "none",
+              "color": "#ffffff",
+            }
+          }
+        >
+          3
+        </button>
+      </li>
+      <li
+        style={
+          Object {
+            "display": "inline-block",
+            "listStyleType": "none",
+            "marginBottom": "5px",
+            "textAlign": "center",
+            "width": "13.6%",
+          }
+        }
+      >
+        <button
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "transparent",
+              "border": "none",
+              "color": "#ffffff",
+            }
+          }
+        >
+          4
+        </button>
+      </li>
+      <li
+        style={
+          Object {
+            "display": "inline-block",
+            "listStyleType": "none",
+            "marginBottom": "5px",
+            "textAlign": "center",
+            "width": "13.6%",
+          }
+        }
+      >
+        <button
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "transparent",
+              "border": "none",
+              "color": "#ffffff",
+            }
+          }
+        >
+          5
+        </button>
+      </li>
+      <li
+        style={
+          Object {
+            "display": "inline-block",
+            "listStyleType": "none",
+            "marginBottom": "5px",
+            "textAlign": "center",
+            "width": "13.6%",
+          }
+        }
+      >
+        <button
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "transparent",
+              "border": "none",
+              "color": "#ffffff",
+            }
+          }
+        >
+          6
+        </button>
+      </li>
+      <li
+        style={
+          Object {
+            "display": "inline-block",
+            "listStyleType": "none",
+            "marginBottom": "5px",
+            "textAlign": "center",
+            "width": "13.6%",
+          }
+        }
+      >
+        <button
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "transparent",
+              "border": "none",
+              "color": "#ffffff",
+            }
+          }
+        >
+          7
+        </button>
+      </li>
+      <li
+        style={
+          Object {
+            "display": "inline-block",
+            "listStyleType": "none",
+            "marginBottom": "5px",
+            "textAlign": "center",
+            "width": "13.6%",
+          }
+        }
+      >
+        <button
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "transparent",
+              "border": "none",
+              "color": "#ffffff",
+            }
+          }
+        >
+          8
+        </button>
+      </li>
+      <li
+        style={
+          Object {
+            "display": "inline-block",
+            "listStyleType": "none",
+            "marginBottom": "5px",
+            "textAlign": "center",
+            "width": "13.6%",
+          }
+        }
+      >
+        <button
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "transparent",
+              "border": "none",
+              "color": "#ffffff",
+            }
+          }
+        >
+          9
+        </button>
+      </li>
+      <li
+        style={
+          Object {
+            "display": "inline-block",
+            "listStyleType": "none",
+            "marginBottom": "5px",
+            "textAlign": "center",
+            "width": "13.6%",
+          }
+        }
+      >
+        <button
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "transparent",
+              "border": "none",
+              "color": "#ffffff",
+            }
+          }
+        >
+          10
+        </button>
+      </li>
+      <li
+        style={
+          Object {
+            "display": "inline-block",
+            "listStyleType": "none",
+            "marginBottom": "5px",
+            "textAlign": "center",
+            "width": "13.6%",
+          }
+        }
+      >
+        <button
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "transparent",
+              "border": "none",
+              "color": "#ffffff",
+            }
+          }
+        >
+          11
+        </button>
+      </li>
+      <li
+        style={
+          Object {
+            "display": "inline-block",
+            "listStyleType": "none",
+            "marginBottom": "5px",
+            "textAlign": "center",
+            "width": "13.6%",
+          }
+        }
+      >
+        <button
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "transparent",
+              "border": "none",
+              "color": "#ffffff",
+            }
+          }
+        >
+          12
+        </button>
+      </li>
+      <li
+        style={
+          Object {
+            "display": "inline-block",
+            "listStyleType": "none",
+            "marginBottom": "5px",
+            "textAlign": "center",
+            "width": "13.6%",
+          }
+        }
+      >
+        <button
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "transparent",
+              "border": "none",
+              "color": "#ffffff",
+            }
+          }
+        >
+          13
+        </button>
+      </li>
+      <li
+        style={
+          Object {
+            "display": "inline-block",
+            "listStyleType": "none",
+            "marginBottom": "5px",
+            "textAlign": "center",
+            "width": "13.6%",
+          }
+        }
+      >
+        <button
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "transparent",
+              "border": "none",
+              "color": "#ffffff",
+            }
+          }
+        >
+          14
+        </button>
+      </li>
+      <li
+        style={
+          Object {
+            "display": "inline-block",
+            "listStyleType": "none",
+            "marginBottom": "5px",
+            "textAlign": "center",
+            "width": "13.6%",
+          }
+        }
+      >
+        <button
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "transparent",
+              "border": "none",
+              "color": "#ffffff",
+            }
+          }
+        >
+          15
+        </button>
+      </li>
+      <li
+        style={
+          Object {
+            "display": "inline-block",
+            "listStyleType": "none",
+            "marginBottom": "5px",
+            "textAlign": "center",
+            "width": "13.6%",
+          }
+        }
+      >
+        <button
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "transparent",
+              "border": "none",
+              "color": "#ffffff",
+            }
+          }
+        >
+          16
+        </button>
+      </li>
+      <li
+        style={
+          Object {
+            "display": "inline-block",
+            "listStyleType": "none",
+            "marginBottom": "5px",
+            "textAlign": "center",
+            "width": "13.6%",
+          }
+        }
+      >
+        <button
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "transparent",
+              "border": "none",
+              "color": "#ffffff",
+            }
+          }
+        >
+          17
+        </button>
+      </li>
+      <li
+        style={
+          Object {
+            "display": "inline-block",
+            "listStyleType": "none",
+            "marginBottom": "5px",
+            "textAlign": "center",
+            "width": "13.6%",
+          }
+        }
+      >
+        <button
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "transparent",
+              "border": "none",
+              "color": "#ffffff",
+            }
+          }
+        >
+          18
+        </button>
+      </li>
+      <li
+        style={
+          Object {
+            "display": "inline-block",
+            "listStyleType": "none",
+            "marginBottom": "5px",
+            "textAlign": "center",
+            "width": "13.6%",
+          }
+        }
+      >
+        <button
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "transparent",
+              "border": "none",
+              "color": "#ffffff",
+            }
+          }
+        >
+          19
+        </button>
+      </li>
+      <li
+        style={
+          Object {
+            "display": "inline-block",
+            "listStyleType": "none",
+            "marginBottom": "5px",
+            "textAlign": "center",
+            "width": "13.6%",
+          }
+        }
+      >
+        <button
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "transparent",
+              "border": "none",
+              "color": "#ffffff",
+            }
+          }
+        >
+          20
+        </button>
+      </li>
+      <li
+        style={
+          Object {
+            "display": "inline-block",
+            "listStyleType": "none",
+            "marginBottom": "5px",
+            "textAlign": "center",
+            "width": "13.6%",
+          }
+        }
+      >
+        <button
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "transparent",
+              "border": "none",
+              "color": "#ffffff",
+            }
+          }
+        >
+          21
+        </button>
+      </li>
+      <li
+        style={
+          Object {
+            "display": "inline-block",
+            "listStyleType": "none",
+            "marginBottom": "5px",
+            "textAlign": "center",
+            "width": "13.6%",
+          }
+        }
+      >
+        <button
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "transparent",
+              "border": "none",
+              "color": "#ffffff",
+            }
+          }
+        >
+          22
+        </button>
+      </li>
+      <li
+        style={
+          Object {
+            "display": "inline-block",
+            "listStyleType": "none",
+            "marginBottom": "5px",
+            "textAlign": "center",
+            "width": "13.6%",
+          }
+        }
+      >
+        <button
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "transparent",
+              "border": "none",
+              "color": "#ffffff",
+            }
+          }
+        >
+          23
+        </button>
+      </li>
+      <li
+        style={
+          Object {
+            "display": "inline-block",
+            "listStyleType": "none",
+            "marginBottom": "5px",
+            "textAlign": "center",
+            "width": "13.6%",
+          }
+        }
+      >
+        <button
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "transparent",
+              "border": "none",
+              "color": "#ffffff",
+            }
+          }
+        >
+          24
+        </button>
+      </li>
+      <li
+        style={
+          Object {
+            "display": "inline-block",
+            "listStyleType": "none",
+            "marginBottom": "5px",
+            "textAlign": "center",
+            "width": "13.6%",
+          }
+        }
+      >
+        <button
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "transparent",
+              "border": "none",
+              "color": "#ffffff",
+            }
+          }
+        >
+          25
+        </button>
+      </li>
+      <li
+        style={
+          Object {
+            "display": "inline-block",
+            "listStyleType": "none",
+            "marginBottom": "5px",
+            "textAlign": "center",
+            "width": "13.6%",
+          }
+        }
+      >
+        <button
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "transparent",
+              "border": "none",
+              "color": "#ffffff",
+            }
+          }
+        >
+          26
+        </button>
+      </li>
+      <li
+        style={
+          Object {
+            "display": "inline-block",
+            "listStyleType": "none",
+            "marginBottom": "5px",
+            "textAlign": "center",
+            "width": "13.6%",
+          }
+        }
+      >
+        <button
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "transparent",
+              "border": "none",
+              "color": "#ffffff",
+            }
+          }
+        >
+          27
+        </button>
+      </li>
+      <li
+        style={
+          Object {
+            "display": "inline-block",
+            "listStyleType": "none",
+            "marginBottom": "5px",
+            "textAlign": "center",
+            "width": "13.6%",
+          }
+        }
+      >
+        <button
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "transparent",
+              "border": "none",
+              "color": "#ffffff",
+            }
+          }
+        >
+          28
+        </button>
+      </li>
+      <li
+        style={
+          Object {
+            "display": "inline-block",
+            "listStyleType": "none",
+            "marginBottom": "5px",
+            "textAlign": "center",
+            "width": "13.6%",
+          }
+        }
+      >
+        <button
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "transparent",
+              "border": "none",
+              "color": "#ffffff",
+            }
+          }
+        >
+          29
+        </button>
+      </li>
+      <li
+        style={
+          Object {
+            "display": "inline-block",
+            "listStyleType": "none",
+            "marginBottom": "5px",
+            "textAlign": "center",
+            "width": "13.6%",
+          }
+        }
+      >
+        <button
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "transparent",
+              "border": "none",
+              "color": "#ffffff",
+            }
+          }
+        >
+          30
+        </button>
+      </li>
+      <li
+        style={
+          Object {
+            "display": "inline-block",
+            "listStyleType": "none",
+            "marginBottom": "5px",
+            "textAlign": "center",
+            "width": "13.6%",
+          }
+        }
+      >
+        <button
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "transparent",
+              "border": "none",
+              "color": "#ffffff",
+            }
+          }
+        >
+          31
+        </button>
+      </li>
+    </ul>
+  </div>
+</div>
+`;

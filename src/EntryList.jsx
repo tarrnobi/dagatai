@@ -3,25 +3,9 @@ import PropTypes from 'prop-types';
 import axios from 'axios';
 
 import EntryItem from './EntryItem';
-import colours from './style';
+import { style } from './style';
 
 const FA = require('react-fontawesome');
-
-const style = {
-  entryListPanel: {
-    backgroundColor: colours.charcoalLightest,
-    display: 'inline-block',
-    margin: '0',
-    width: '50%',
-    minHeight: '200px',
-    clear: 'both',
-  },
-  buttonTransparent: {
-    border: 'none',
-    backgroundColor: 'transparent',
-    color: '#ffffff',
-  },
-};
 
 class EntryList extends Component {
   constructor(props) {
@@ -60,18 +44,15 @@ class EntryList extends Component {
     this.setState({ events: response.data });
   }
   async handleCreateNewEvent(event) {
-    const response = await axios.post(this.props.endPoint, event);
-    console.log(response);
+    await axios.post(this.props.endPoint, event);
     this.loadEventsFromAPI();
   }
   async handleDeleteEvent(id) {
-    const response = await axios.delete(`${this.props.endPoint}/${id}`);
-    console.log(response);
+    await axios.delete(`${this.props.endPoint}/${id}`);
     this.loadEventsFromAPI();
   }
   async handleUpdateEvent(id, event) {
-    const response = await axios.put(`${this.props.endPoint}/${id}`, event);
-    console.log(response);
+    await axios.put(`${this.props.endPoint}/${id}`, event);
     this.loadEventsFromAPI();
   }
 

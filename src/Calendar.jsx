@@ -2,32 +2,10 @@ import React, { Component } from 'react';
 import Item from './Item';
 import EntryList from './EntryList';
 
-import colours from './style';
+import { style } from './style';
+// const colours = require('./style');
+// const style = require('./style').style;
 
-const style = {
-  container: {
-  },
-  calendarSection: {
-    border: `solid ${colours.Primary4} 3px`,
-    backgroundColor: colours.charcoalLight,
-  },
-  datePanel: {
-    backgroundColor: colours.charcoalLighter,
-    display: 'inline-block',
-    verticalAlign: 'top',
-    maxWidth: '50%',
-    margin: '0',
-    padding: '0',
-  },
-  header: {
-    backgroundColor: colours.Primary0,
-    minHeight: '30px',
-    fontSize: '2em',
-    fontFamily: 'Impact, sans-serif',
-    color: colours.PrimaryText0,
-  },
-
-};
 class Calendar extends Component {
   constructor(props) {
     super(props);
@@ -36,7 +14,6 @@ class Calendar extends Component {
       locale: 'en-US',
       showEntryList: false,
     };
-
     this.handleChildDaySelection = this.handleChildDaySelection.bind(this);
     this.hideEntryList = this.hideEntryList.bind(this);
   }

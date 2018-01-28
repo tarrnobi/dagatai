@@ -1,23 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import colours from './style';
-
-const style = {
-  calendarItem: {
-    listStyleType: 'none',
-    display: 'inline-block',
-    width: '13.6%',
-    textAlign: 'center',
-    marginBottom: '5px',
-    fontSize: '12px',
-  },
-  buttonStyle: {
-    border: 'none',
-    backgroundColor: 'transparent',
-    color: '#ffffff',
-  },
-};
+import { style } from './style';
 
 class Item extends Component {
   constructor(props) {
@@ -30,9 +14,9 @@ class Item extends Component {
   }
   render() {
     return (
-      <li style={style.calendarItem}>
+      <li style={style.calendarItem.componentStyle}>
         <button
-          style={style.buttonStyle}
+          style={style.calendarItem.buttonStyle}
           onClick={this.handleClick}
         >
           {this.props.itemDate.getDate()}

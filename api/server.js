@@ -15,7 +15,7 @@ const app = express();
 const port = process.env.API_PORT || 3001;
 
 // db configure
-const mongoDB = `mongodb://${process.env.DB_USER}:${process.env.DB_PASSWORD}@ds111608.mlab.com:11608/dagatai`;
+const mongoDB = `mongodb://${process.env.DB_USER}:${process.env.DB_PASSWORD}@${process.env.DB_INSTANCE}`;
 mongoose.connect(mongoDB, { useMongoClient: true });
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));

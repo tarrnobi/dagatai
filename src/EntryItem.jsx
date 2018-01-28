@@ -1,20 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { style } from './style';
 
 const FA = require('react-fontawesome');
 
-const style = {
-  buttonTransparent: {
-    border: 'none',
-    backgroundColor: 'transparent',
-    color: '#ffffff',
-  },
-  textArea: {
-    minWidth: '98%',
-    maxWidth: '100%',
-    resize: 'none',
-  },
-};
 class EntryItem extends Component {
   constructor(props) {
     super(props);
@@ -61,7 +50,6 @@ class EntryItem extends Component {
     this.props.onDeleteEvent(this.props.eventID);
   }
   saveNewEvent() {
-    console.log('creating event');
     const author = this.state.author.trim();
     const text = this.state.text.trim();
     if (!author || !text) return;
@@ -72,7 +60,6 @@ class EntryItem extends Component {
     });
   }
   editEvent() {
-    console.log('editing event');
     const id = this.props.eventID;
     const event = {
       author: this.state.author.trim(),
